@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Pricing Logic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form>
+        <h1>Delivery Pricing</h1>
+        <label for="totalOrder">Enter the total</label>
+        <input id="totalOrder" type="number" placeholder="$">
+
+        <label for="isPremium">Is a premium user?</label>
+        <select name="premiun" id="isPremium">
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+
+        <button type="button" onclick="shippingCost()">Calculate</button>
+
+        <p id="ShippingCost"></p>
+    </form>
+
+    <script src="js/logic.js"></script>
+</body>
+</html>
+ 
